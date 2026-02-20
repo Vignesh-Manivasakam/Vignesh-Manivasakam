@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620" font-family="Segoe UI, Arial, sans-serif">
+
+  <!-- ═══════════════════════════════════
+       BACKGROUND
+  ═══════════════════════════════════ -->
+  <rect width="1200" height="620" fill="#0d1117" rx="14"/>
+
+  <!-- Subtle grid feel - horizontal rule under title -->
+  <line x1="40" y1="58" x2="1160" y2="58" stroke="#21262d" stroke-width="1"/>
+
+  <!-- ═══════════════════════════════════
+       TITLE BLOCK
+  ═══════════════════════════════════ -->
+  <text x="600" y="28" text-anchor="middle" fill="#e6edf3" font-size="13.5" font-weight="bold" letter-spacing="2">AUTOMOTIVE R&amp;D · V-MODEL AUTOMATION MAP</text>
+  <text x="600" y="48" text-anchor="middle" fill="#484f58" font-size="9.5" letter-spacing="1">AI &amp; AUTOMATION TOOLS MAPPED TO ENGINEERING PROCESS STAGES</text>
+
+  <!-- ═══════════════════════════════════
+       V-MODEL ARM LINES
+  ═══════════════════════════════════ -->
+  <!-- Left arm -->
+  <polyline points="130,105 280,185 430,265 580,345"
+            fill="none" stroke="#1f6feb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+  <!-- Right arm -->
+  <polyline points="580,345 730,265 880,185 1030,105"
+            fill="none" stroke="#1f6feb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+
+  <!-- Horizontal correspondence lines (faint) -->
+  <line x1="280" y1="185" x2="880" y2="185" stroke="#21262d" stroke-width="1" stroke-dasharray="4,6"/>
+  <line x1="430" y1="265" x2="730" y2="265" stroke="#21262d" stroke-width="1" stroke-dasharray="4,6"/>
+
+  <!-- ═══════════════════════════════════
+       V-MODEL STAGE NODES
+       Left: L1(130,105) L2(280,185) L3(430,265) L4(580,345)
+       Right: R3(730,265) R2(880,185) R1(1030,105)
+  ═══════════════════════════════════ -->
+
+  <!-- L1: Stakeholder & Customer Requirements -->
+  <rect x="50" y="78" width="162" height="52" rx="8" fill="#1c2e4a" stroke="#1f6feb" stroke-width="1.8"/>
+  <text x="131" y="100" text-anchor="middle" fill="#93c5fd" font-size="9.5" font-weight="bold">Stakeholder &amp;</text>
+  <text x="131" y="115" text-anchor="middle" fill="#93c5fd" font-size="9.5" font-weight="bold">Customer Requirements</text>
+  <circle cx="130" cy="105" r="5" fill="#1f6feb" stroke="#0d1117" stroke-width="2"/>
+
+  <!-- L2: System Requirements -->
+  <rect x="200" y="158" width="162" height="52" rx="8" fill="#1c2e4a" stroke="#1f6feb" stroke-width="1.8"/>
+  <text x="281" y="180" text-anchor="middle" fill="#93c5fd" font-size="9.5" font-weight="bold">System Requirements</text>
+  <text x="281" y="196" text-anchor="middle" fill="#93c5fd" font-size="9" >Definition &amp; Management</text>
+  <circle cx="280" cy="185" r="5" fill="#1f6feb" stroke="#0d1117" stroke-width="2"/>
+
+  <!-- L3: System Architecture -->
+  <rect x="350" y="238" width="162" height="52" rx="8" fill="#1c2e4a" stroke="#334155" stroke-width="1.5"/>
+  <text x="431" y="260" text-anchor="middle" fill="#94a3b8" font-size="9.5" font-weight="bold">System Architecture</text>
+  <text x="431" y="276" text-anchor="middle" fill="#94a3b8" font-size="9">&amp; Design</text>
+  <circle cx="430" cy="265" r="5" fill="#334155" stroke="#0d1117" stroke-width="2"/>
+
+  <!-- L4: Implementation (bottom of V) -->
+  <rect x="500" y="318" width="162" height="52" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="581" y="340" text-anchor="middle" fill="#6e7681" font-size="9.5" font-weight="bold">Implementation /</text>
+  <text x="581" y="356" text-anchor="middle" fill="#6e7681" font-size="9">Coding &amp; Build</text>
+  <circle cx="580" cy="345" r="6" fill="#21262d" stroke="#444c56" stroke-width="2"/>
+
+  <!-- R3: Integration Testing -->
+  <rect x="650" y="238" width="162" height="52" rx="8" fill="#1c2e4a" stroke="#334155" stroke-width="1.5"/>
+  <text x="731" y="260" text-anchor="middle" fill="#94a3b8" font-size="9.5" font-weight="bold">Integration &amp; System</text>
+  <text x="731" y="276" text-anchor="middle" fill="#94a3b8" font-size="9">Test Planning</text>
+  <circle cx="730" cy="265" r="5" fill="#334155" stroke="#0d1117" stroke-width="2"/>
+
+  <!-- R2: Validation Testing -->
+  <rect x="800" y="158" width="162" height="52" rx="8" fill="#0f2d1e" stroke="#238636" stroke-width="1.8"/>
+  <text x="881" y="180" text-anchor="middle" fill="#7ee787" font-size="9.5" font-weight="bold">Validation &amp; System</text>
+  <text x="881" y="196" text-anchor="middle" fill="#7ee787" font-size="9">Testing Execution</text>
+  <circle cx="880" cy="185" r="5" fill="#238636" stroke="#0d1117" stroke-width="2"/>
+
+  <!-- R1: Product Release -->
+  <rect x="950" y="78" width="162" height="52" rx="8" fill="#1c2e4a" stroke="#1f6feb" stroke-width="1.8"/>
+  <text x="1031" y="100" text-anchor="middle" fill="#93c5fd" font-size="9.5" font-weight="bold">Acceptance &amp;</text>
+  <text x="1031" y="115" text-anchor="middle" fill="#93c5fd" font-size="9.5" font-weight="bold">Product Release</text>
+  <circle cx="1030" cy="105" r="5" fill="#1f6feb" stroke="#0d1117" stroke-width="2"/>
+
+  <!-- ═══════════════════════════════════
+       DIVIDER BETWEEN V-MODEL & CARDS
+  ═══════════════════════════════════ -->
+  <line x1="40" y1="390" x2="1160" y2="390" stroke="#21262d" stroke-width="1"/>
+  <text x="600" y="408" text-anchor="middle" fill="#484f58" font-size="9" letter-spacing="1.5">MY AUTOMATION TOOLS  ·  MAPPED TO STAGE</text>
+
+  <!-- ═══════════════════════════════════
+       VERTICAL DROP LINES (node → card)
+  ═══════════════════════════════════ -->
+  <!-- PDF→DOORS from L2 (x=280) -->
+  <line x1="202" y1="390" x2="202" y2="418" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="202" cy="390" r="3" fill="#f59e0b"/>
+
+  <!-- AI Similarity from L2 (x=280) slightly offset -->
+  <line x1="372" y1="390" x2="372" y2="418" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="372" cy="390" r="3" fill="#8b5cf6"/>
+
+  <!-- Agentic Reviewer from L2 top -->
+  <line x1="542" y1="390" x2="542" y2="418" stroke="#34d399" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="542" cy="390" r="3" fill="#34d399"/>
+
+  <!-- ML Allocator from L3 (x=430) -->
+  <line x1="712" y1="390" x2="712" y2="418" stroke="#f87171" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="712" cy="390" r="3" fill="#f87171"/>
+
+  <!-- Digital Test Lab from R2 (x=880) -->
+  <line x1="940" y1="390" x2="940" y2="418" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="940" cy="390" r="3" fill="#38bdf8"/>
+
+  <!-- ═══════════════════════════════════
+       TOOL CARDS ROW
+       5 cards, evenly spaced
+       Each card: x positions at ~100, 270, 440, 610, 810
+       Card width: 160, height: 150
+  ═══════════════════════════════════ -->
+
+  <!-- CARD 1: PDF → DOORS (amber) -->
+  <rect x="118" y="418" width="168" height="158" rx="8" fill="#111009" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="118" y="418" width="168" height="28" rx="8" fill="#78350f"/>
+  <rect x="118" y="436" width="168" height="10" rx="0" fill="#78350f"/>
+  <text x="202" y="435" text-anchor="middle" fill="#fde68a" font-size="9.5" font-weight="bold">📥 PDF→RTF→DOORS</text>
+  <text x="134" y="460" fill="#9ca3af" font-size="8.5" font-weight="bold">Stage</text>
+  <text x="134" y="473" fill="#fcd34d" font-size="8.5">System Requirements</text>
+  <line x1="134" y1="480" x2="278" y2="480" stroke="#1f2937" stroke-width="1"/>
+  <text x="134" y="494" fill="#9ca3af" font-size="8.5" font-weight="bold">Problem</text>
+  <text x="134" y="507" fill="#e6edf3" font-size="8">Manual PDF reformatting</text>
+  <text x="134" y="519" fill="#e6edf3" font-size="8">for DOORS import</text>
+  <line x1="134" y1="526" x2="278" y2="526" stroke="#1f2937" stroke-width="1"/>
+  <text x="134" y="540" fill="#9ca3af" font-size="8.5" font-weight="bold">Saving</text>
+  <text x="134" y="553" fill="#86efac" font-size="8.5" font-weight="bold">~80% effort reduction</text>
+  <rect x="134" y="560" width="44" height="12" rx="3" fill="#166534"/>
+  <text x="156" y="570" text-anchor="middle" fill="#86efac" font-size="7.5" font-weight="bold">✅ LIVE</text>
+
+  <!-- CARD 2: AI Similarity (purple) -->
+  <rect x="288" y="418" width="168" height="158" rx="8" fill="#0e0b16" stroke="#8b5cf6" stroke-width="1.5"/>
+  <rect x="288" y="418" width="168" height="28" rx="8" fill="#4c1d95"/>
+  <rect x="288" y="436" width="168" height="10" rx="0" fill="#4c1d95"/>
+  <text x="372" y="435" text-anchor="middle" fill="#ddd6fe" font-size="9.5" font-weight="bold">🔍 AI SIMILARITY ASSIST</text>
+  <text x="304" y="460" fill="#9ca3af" font-size="8.5" font-weight="bold">Stage</text>
+  <text x="304" y="473" fill="#c4b5fd" font-size="8.5">System Requirements</text>
+  <line x1="304" y1="480" x2="448" y2="480" stroke="#1f2937" stroke-width="1"/>
+  <text x="304" y="494" fill="#9ca3af" font-size="8.5" font-weight="bold">Problem</text>
+  <text x="304" y="507" fill="#e6edf3" font-size="8">Manual redundancy check</text>
+  <text x="304" y="519" fill="#e6edf3" font-size="8">vs 10+ legacy projects</text>
+  <line x1="304" y1="526" x2="448" y2="526" stroke="#1f2937" stroke-width="1"/>
+  <text x="304" y="540" fill="#9ca3af" font-size="8.5" font-weight="bold">Saving</text>
+  <text x="304" y="553" fill="#86efac" font-size="8.5" font-weight="bold">15 days → 5 days (65%↓)</text>
+  <rect x="304" y="560" width="44" height="12" rx="3" fill="#166534"/>
+  <text x="326" y="570" text-anchor="middle" fill="#86efac" font-size="7.5" font-weight="bold">✅ LIVE</text>
+
+  <!-- CARD 3: Agentic Reviewer (green) -->
+  <rect x="458" y="418" width="168" height="158" rx="8" fill="#061410" stroke="#34d399" stroke-width="1.5"/>
+  <rect x="458" y="418" width="168" height="28" rx="8" fill="#064e3b"/>
+  <rect x="458" y="436" width="168" height="10" rx="0" fill="#064e3b"/>
+  <text x="542" y="435" text-anchor="middle" fill="#a7f3d0" font-size="9.5" font-weight="bold">🛡️ AGENTIC AI REVIEWER</text>
+  <text x="474" y="460" fill="#9ca3af" font-size="8.5" font-weight="bold">Stage</text>
+  <text x="474" y="473" fill="#6ee7b7" font-size="8.5">System Requirements</text>
+  <line x1="474" y1="480" x2="618" y2="480" stroke="#1f2937" stroke-width="1"/>
+  <text x="474" y="494" fill="#9ca3af" font-size="8.5" font-weight="bold">Problem</text>
+  <text x="474" y="507" fill="#e6edf3" font-size="8">Safety attr. missed in</text>
+  <text x="474" y="519" fill="#e6edf3" font-size="8">manual req reviews</text>
+  <line x1="474" y1="526" x2="618" y2="526" stroke="#1f2937" stroke-width="1"/>
+  <text x="474" y="540" fill="#9ca3af" font-size="8.5" font-weight="bold">Saving</text>
+  <text x="474" y="553" fill="#86efac" font-size="8.5" font-weight="bold">&gt;90% recall vs expert</text>
+  <rect x="474" y="560" width="44" height="12" rx="3" fill="#166534"/>
+  <text x="496" y="570" text-anchor="middle" fill="#86efac" font-size="7.5" font-weight="bold">✅ LIVE</text>
+
+  <!-- CARD 4: ML Allocator (red) -->
+  <rect x="628" y="418" width="168" height="158" rx="8" fill="#130c0c" stroke="#f87171" stroke-width="1.5"/>
+  <rect x="628" y="418" width="168" height="28" rx="8" fill="#7f1d1d"/>
+  <rect x="628" y="436" width="168" height="10" rx="0" fill="#7f1d1d"/>
+  <text x="712" y="435" text-anchor="middle" fill="#fecaca" font-size="9.5" font-weight="bold">⚙️ ML REQ ALLOCATOR</text>
+  <text x="644" y="460" fill="#9ca3af" font-size="8.5" font-weight="bold">Stage</text>
+  <text x="644" y="473" fill="#fca5a5" font-size="8.5">System Architecture</text>
+  <line x1="644" y1="480" x2="788" y2="480" stroke="#1f2937" stroke-width="1"/>
+  <text x="644" y="494" fill="#9ca3af" font-size="8.5" font-weight="bold">Problem</text>
+  <text x="644" y="507" fill="#e6edf3" font-size="8">Manual, inconsistent</text>
+  <text x="644" y="519" fill="#e6edf3" font-size="8">req-to-team assignment</text>
+  <line x1="644" y1="526" x2="788" y2="526" stroke="#1f2937" stroke-width="1"/>
+  <text x="644" y="540" fill="#9ca3af" font-size="8.5" font-weight="bold">Target</text>
+  <text x="644" y="553" fill="#fde68a" font-size="8.5" font-weight="bold">Auto-classify ownership</text>
+  <rect x="644" y="560" width="78" height="12" rx="3" fill="#78350f"/>
+  <text x="683" y="570" text-anchor="middle" fill="#fbbf24" font-size="7.5" font-weight="bold">🔄 IN PROGRESS</text>
+
+  <!-- CARD 5: Digital Test Lab (blue) -->
+  <rect x="856" y="418" width="168" height="158" rx="8" fill="#060f18" stroke="#38bdf8" stroke-width="1.5"/>
+  <rect x="856" y="418" width="168" height="28" rx="8" fill="#0c4a6e"/>
+  <rect x="856" y="436" width="168" height="10" rx="0" fill="#0c4a6e"/>
+  <text x="940" y="435" text-anchor="middle" fill="#bae6fd" font-size="9.5" font-weight="bold">📊 DIGITAL TEST LAB</text>
+  <text x="872" y="460" fill="#9ca3af" font-size="8.5" font-weight="bold">Stage</text>
+  <text x="872" y="473" fill="#7dd3fc" font-size="8.5">Validation Testing</text>
+  <line x1="872" y1="480" x2="1016" y2="480" stroke="#1f2937" stroke-width="1"/>
+  <text x="872" y="494" fill="#9ca3af" font-size="8.5" font-weight="bold">Problem</text>
+  <text x="872" y="507" fill="#e6edf3" font-size="8">Paper-based test lifecycle</text>
+  <text x="872" y="519" fill="#e6edf3" font-size="8">request → report</text>
+  <line x1="872" y1="526" x2="1016" y2="526" stroke="#1f2937" stroke-width="1"/>
+  <text x="872" y="540" fill="#9ca3af" font-size="8.5" font-weight="bold">Saving</text>
+  <text x="872" y="553" fill="#86efac" font-size="8.5" font-weight="bold">80% paper reduction</text>
+  <rect x="872" y="560" width="44" height="12" rx="3" fill="#166534"/>
+  <text x="894" y="570" text-anchor="middle" fill="#86efac" font-size="7.5" font-weight="bold">✅ LIVE</text>
+
+  <!-- ═══════════════════════════════════
+       PHASE BRACKET LABELS
+  ═══════════════════════════════════ -->
+  <!-- Left bracket — Phase 2 -->
+  <line x1="40" y1="415" x2="40" y2="580" stroke="#1f6feb" stroke-width="1.5"/>
+  <line x1="40" y1="497" x2="116" y2="497" stroke="#1f6feb" stroke-width="1.5"/>
+  <text x="36" y="466" fill="#1f6feb" font-size="8.5" font-weight="bold" transform="rotate(-90,36,480)">PHASE 2 · BOSCH</text>
+
+  <!-- Right bracket — Phase 1 -->
+  <line x1="1162" y1="415" x2="1162" y2="580" stroke="#238636" stroke-width="1.5"/>
+  <line x1="1028" y1="497" x2="1162" y2="497" stroke="#238636" stroke-width="1.5"/>
+  <text x="1166" y="493" fill="#238636" font-size="8.5" font-weight="bold" transform="rotate(90,1166,480)">PHASE 1 · ZF RANE</text>
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════ -->
+  <line x1="40" y1="595" x2="1160" y2="595" stroke="#21262d" stroke-width="1"/>
+  <circle cx="60" cy="608" r="5" fill="#238636"/>
+  <text x="72" y="612" fill="#8b949e" font-size="8.5">Live &amp; Deployed</text>
+  <circle cx="178" cy="608" r="5" fill="#d97706"/>
+  <text x="190" y="612" fill="#8b949e" font-size="8.5">In Progress</text>
+  <text x="600" y="612" text-anchor="middle" fill="#484f58" font-size="8">🥇  ADAS Object Detection · 1st Prize · Internal Innovation Competition</text>
+  <text x="1140" y="612" text-anchor="end" fill="#484f58" font-size="8">github.com/Vignesh-Manivasakam</text>
+
+</svg>
