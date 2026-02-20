@@ -43,10 +43,10 @@ Every project on this GitHub targets a specific bottleneck in the engineering pr
 | | |
 |---|---|
 | **Problem** | Importing customer requirement PDFs into IBM DOORS required manual reformatting — repetitive, error-prone, and consuming hours per project |
-| **Solution** | Automated pipeline: parse PDF structure → generate DOORS-compatible RTF → import ready, zero manual touch |
-| **Impact** | Document preparation effort reduced by **~80%** across the requirements team |
+| **Solution** | Automated pipeline: parse PDF structure → generate DOORS-compatible RTF → import ready, with Human in loop |
+| **Impact** | Document preparation effort reduced by **~70%** across the requirements team |
 | **Tech** | `Python` `PDF Parsing` `RTF Generation` `DOORS Integration` |
-| **Status** | ✅ Deployed internally · Sanitized open-source version coming soon |
+| **Status** | ✅ Deployed internally · Confidential tool not available in Public|
 
 ---
 
@@ -59,7 +59,7 @@ Every project on this GitHub targets a specific bottleneck in the engineering pr
 | **Solution** | RAG pipeline that ingests PDF/Excel requirement files, generates embeddings, and surfaces semantically similar requirements from predecessor projects |
 | **Key Innovation** | Exact-Match Filter *before* semantic search — reducing API token usage by 40% |
 | **Impact** | Review cycle cut from **15 days → 5 days (~65% lead time reduction)** |
-| **Tech** | `Python` `Azure OpenAI GPT-4` `LangChain` `FAISS` `Streamlit` |
+| **Tech** | `Python` `Azure OpenAI GPT-4` `FAISS` `Streamlit` |
 | **Status** | ✅ Deployed internally · 🔗 Public POC on this GitHub |
 
 ---
@@ -71,8 +71,8 @@ Every project on this GitHub targets a specific bottleneck in the engineering pr
 |---|---|
 | **Problem** | Allocating requirements to the correct system component or team is a manual, expert-dependent decision — inconsistent across projects and OEMs |
 | **Solution** | NLP classification model trained on historical allocation decisions to predict ownership with a confidence score |
-| **Tech** | `Python` `NLP` `Scikit-learn` `Transformers` |
-| **Status** | 🔄 In Progress — model training ongoing |
+| **Tech** | `Python` `NLP` `Scikit-learn` `Transformers``deep learning` `LLM` |
+| **Status** | 🔄 In Progress — Model training ongoing |
 
 ---
 
@@ -81,10 +81,10 @@ Every project on this GitHub targets a specific bottleneck in the engineering pr
 
 | | |
 |---|---|
-| **Problem** | Manual reviews missed safety attributes and verifiability gaps, creating ISO 26262 compliance issues found late in the development cycle |
+| **Problem** | Manual reviews missed tooks more time in the development cycle |
 | **Solution** | Multi-agent system with specialized personas: Safety & Security Agent (ISO 26262 / SOTIF), Test Verifiability Agent, and a Data Layer agent for input collection and refinement |
 | **Impact** | **>90% recall** identifying missing safety attributes vs. manual domain-expert review |
-| **Tech** | `Python` `Multi-Agent Systems` `Prompt Engineering` `LLMs` |
+| **Tech** | `Python` `Multi-Agent Systems` `Prompt Engineering` `LLMs``Langraph` |
 | **Status** | 🔬 POC Built · Validated against domain expert benchmark |
 
 ---
@@ -102,7 +102,7 @@ Every project on this GitHub targets a specific bottleneck in the engineering pr
 | **Solution** | End-to-end digital system: Request → Scheduling → Execution Tracking → Report Generation |
 | **Role** | Project Lead & Process Architect — defined business logic and system architecture, managed external development team |
 | **Impact** | Paper-based processes reduced by **80%** · Real-time equipment utilization tracking enabled across the test organization |
-| **Tech** | `System Architecture` `Process Design` `VBA` `Data Management` |
+| **Tech** | `Buisness process` `Process Design` `dotnet` `Data Management` |
 | **Status** | ✅ Deployed & live in production |
 
 ---
