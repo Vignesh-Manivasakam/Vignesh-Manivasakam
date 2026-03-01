@@ -97,7 +97,7 @@
 | | |
 |---|---|
 | **Problem** | Manual reviews missed safety attributes and consumed significant time in the development cycle |
-| **Solution** | Multi-agent system: Safety & Security Agent (ISO 26262/SOTIF) + Test Verifiability Agent + Data Layer orchestration |
+| **Solution** | Multi-agent system: Safety & Security Agent (ISO 26262) + Test Verifiability Agent + Data Layer orchestration |
 | **Impact** | **>90% recall** on missing safety attributes vs. domain-expert manual review |
 | **Tech** | `Python` `LangGraph` `Multi-Agent Systems` `Prompt Engineering` `LLMs` |
 | **Status** | ![POC Built](https://img.shields.io/badge/POC%20BUILT-blue) Validated against domain-expert benchmark |
@@ -149,7 +149,6 @@
   <img src="https://img.shields.io/badge/NLP-4CAF50?style=flat-square"/>
   <img src="https://img.shields.io/badge/ISO_26262-1F5C99?style=flat-square"/>
   <img src="https://img.shields.io/badge/ASPICE-1F5C99?style=flat-square"/>
-  <img src="https://img.shields.io/badge/SOTIF-1F5C99?style=flat-square"/>
   <img src="https://img.shields.io/badge/IBM_DOORS-052FAD?style=flat-square"/>
 </p>
 
