@@ -22,7 +22,7 @@
 ## 🗺️ The Big Picture — Full V-Model Automation
 
 <p align="center">
-  <img src="assets/vmodel-full.png" alt="Automotive V-Model Automation Map" width="100%"/>
+  <img src="/vmodel-full.png" alt="Automotive V-Model Automation Map" width="100%"/>
 </p>
 
 **Phase 2 @ Bosch (2023–Present)** → Requirements Engineering Automation  
