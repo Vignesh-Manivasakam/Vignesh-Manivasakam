@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 340" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="820" height="340" fill="#fafbfc" rx="12"/>
+  <rect x="1" y="1" width="818" height="338" fill="none" stroke="#e1e4e8" rx="12" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="40" y="38" fill="#24292f" font-size="16" font-weight="700">Measured Engineering Impact</text>
+  <text x="40" y="58" fill="#656d76" font-size="12">Departmental deployment metrics across active projects</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="72" x2="780" y2="72" stroke="#d0d7de" stroke-width="1"/>
+
+  <!-- ═══════ SECTION 1: AI Similarity Assistant ═══════ -->
+  <text x="40" y="102" fill="#24292f" font-size="13" font-weight="600">AI Requirement Similarity Assistant</text>
+  <text x="40" y="118" fill="#656d76" font-size="11">Semantic comparison of customer specs against legacy requirement sheets</text>
+
+  <!-- Before bar -->
+  <text x="40" y="148" fill="#656d76" font-size="11">Before</text>
+  <rect x="110" y="134" width="540" height="22" fill="#f6d8d5" rx="4"/>
+  <rect x="110" y="134" width="540" height="22" fill="none" stroke="#cf6560" rx="4" stroke-width="1"/>
+  <text x="660" y="150" fill="#9b2c2c" font-size="12" font-weight="600">15 days per review cycle</text>
+
+  <!-- After bar -->
+  <text x="40" y="180" fill="#656d76" font-size="11">After</text>
+  <rect x="110" y="166" width="180" height="22" fill="#d1ecdc" rx="4"/>
+  <rect x="110" y="166" width="180" height="22" fill="none" stroke="#2f855a" rx="4" stroke-width="1"/>
+  <text x="300" y="182" fill="#276749" font-size="12" font-weight="600">5 days · 350+ hours saved · $8,880 cost avoidance</text>
+
+  <!-- Reduction badge -->
+  <rect x="690" y="152" width="80" height="24" fill="#276749" rx="12"/>
+  <text x="730" y="168" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">↓ 65%</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="202" x2="780" y2="202" stroke="#d0d7de" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- ═══════ SECTION 2: PDF to DOORS Pipeline ═══════ -->
+  <text x="40" y="228" fill="#24292f" font-size="13" font-weight="600">PDF to DOORS Import Pipeline (VLM Orchestrator)</text>
+  <text x="40" y="244" fill="#656d76" font-size="11">Automated PDF extraction with ReqIF/RTF/HTML export for IBM DOORS</text>
+
+  <!-- Before bar -->
+  <text x="40" y="274" fill="#656d76" font-size="11">Before</text>
+  <rect x="110" y="260" width="540" height="22" fill="#f6d8d5" rx="4"/>
+  <rect x="110" y="260" width="540" height="22" fill="none" stroke="#cf6560" rx="4" stroke-width="1"/>
+  <text x="660" y="276" fill="#9b2c2c" font-size="12" font-weight="600">25 days per project</text>
+
+  <!-- After bar -->
+  <text x="40" y="306" fill="#656d76" font-size="11">After</text>
+  <rect x="110" y="292" width="108" height="22" fill="#d1ecdc" rx="4"/>
+  <rect x="110" y="292" width="108" height="22" fill="none" stroke="#2f855a" rx="4" stroke-width="1"/>
+  <text x="228" y="308" fill="#276749" font-size="12" font-weight="600">5 days · 300+ hours saved across 4–5 active projects</text>
+
+  <!-- Reduction badge -->
+  <rect x="690" y="278" width="80" height="24" fill="#276749" rx="12"/>
+  <text x="730" y="294" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">↓ 80%</text>
+
+</svg>
