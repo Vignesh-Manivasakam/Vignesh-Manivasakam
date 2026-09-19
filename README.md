@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/vignesh-manivasakam-17b0a2128/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="https://www.linkedin.com/in/vignesh-manivasakam"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="mailto:vicky.manivasagam@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
   <a href="https://github.com/Vignesh-Manivasakam"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 </p>
@@ -68,9 +68,9 @@
 | **Problem** | Importing customer specification PDFs into IBM DOORS required up to **15 days** of manual reformatting per project — error-prone, repetitive, and blocking every downstream activity |
 | **Solution** | Enterprise document transformation pipeline built on **Azure Document Intelligence**, with a dual-path extractor alongside **PaddleOCR-VL** → interactive React canvas block editor → concurrent export to three DOORS-compatible formats (**RTF with OLE**, **HTML**, **ReqIF XML**) |
 | **Key engineering** | • **ReqIF 1.2 compliance** — full OMG spec with multi-tool targeting (DOORS Classic 9.x, DOORS Next/ELM, Polarion, Elektrobit) · • **Two-tier automatic ReqID discovery** — structural fingerprinting + frequency scoring, with meta-pattern regex fallback · • **Three-tier heading inference** — model → regex numbering → bbox height heuristic · • **OLE COM pooling manager** — process recycling to eliminate GDI handle leaks · • **OCR result caching** — immutable/mutable JSON split avoids re-running GPU inference on revisits · • **Language filter** — auto-discards non-English blocks from mixed content |
-| **Impact** | **15 days → ~3 days (80% cut)** · **6,000+ pages processed** · **$30,163 USD cost avoidance** |
+| **Impact** | **15 days → ~3 days (80% cut)** · **6,000+ pages processed** · **$30,163 USD cost avoidance** · *Currently in testing for worldwide enterprise release across Bosch* |
 | **Tech** | `Azure Document Intelligence` `PaddleOCR-VL` `FastAPI` `React/Vite/TypeScript` `ReqIF 1.2` `Word COM (OLE)` `Zustand` |
-| **Status** | ![Deployed](https://img.shields.io/badge/DEPLOYED-INTERNAL-grey) · 🏛️ **[Enterprise Architecture Showcase]** |
+| **Status** | ![Deployed](https://img.shields.io/badge/DEPLOYED-INTERNAL-grey) · 🏛️ **[Enterprise Architecture Showcase](https://github.com/Vignesh-Manivasakam/PDF2RTF)** |
 
 ---
 
@@ -99,7 +99,7 @@
 | **Solution** | LangGraph multi-agent compliance verification graph combining specialized agents — Safety Standard Parser, ASIL Decomposition Auditor, Requirement Verifiability Checker, Safety Critic — with evaluator-optimizer loops |
 | **Impact** | **>90% recall** on safety-critical attributes, validated against certified functional safety experts · **60% faster** review cycle |
 | **Tech** | `LangGraph` `ISO 26262` `ISO 21448 (SOTIF)` `Multi-Agent Evaluator-Optimizer` |
-| **Status** | ![POC Built](https://img.shields.io/badge/POC%20BUILT-blue) — internal specification, not yet released as a standalone repo |
+| **Status** | ![Award Winner](https://img.shields.io/badge/BOSCH_INNOVATION_AWARD-2024-gold) · Internal enterprise specification honored with Bosch Engineering Excellence Award (July 2024) |
 
 ---
 
@@ -125,9 +125,9 @@
 |---|---|
 | **Problem** | Impact analysis of design changes required consulting multiple disconnected specification documents, with knowledge scattered across teams |
 | **Solution** | Hybrid agentic pipeline: entity extraction → Neo4j knowledge-graph multi-tool query (11 tools) → sufficiency check → scoped ChromaDB vector search (4 tools) → Claude Sonnet synthesis with extended thinking. 12 granular SSE event types stream reasoning steps live |
-| **Key engineering** | • **Cytoscape.js** renders Neo4j traversal paths as interactive graph visualizations · • **Plotly.js** projects vector search results as 2D PCA cluster scatter plots · • **Versioned prompt system** — 8 purpose-specific prompts · • **Drawing OCR** — Gemini API extracts structured data from engineering drawings with sufficiency scoring |
+| **Key engineering** | • **Cytoscape.js** renders Neo4j traversal paths as interactive graph visualizations · • **Plotly.js** projects vector search results as 2D PCA cluster scatter plots · • **Versioned prompt system** — 8 purpose-specific prompts · • **Drawing OCR** — Gemini API extracts structured data from engineering drawings with sufficiency scoring · • **Dual-run tolerance stack engine** — flags radial clearance violations flipping PASS to FAIL |
 | **Tech** | `Next.js 14` `FastAPI (SSE)` `Neo4j` `ChromaDB` `Claude Sonnet` `Gemini` `Cytoscape.js` |
-| **Status** | ![Interactive Workbench](https://img.shields.io/badge/WORKBENCH-STREAMING-blue) · 🏛️ **[Enterprise Architecture Showcase]** |
+| **Status** | ![Interactive Workbench](https://img.shields.io/badge/WORKBENCH-STREAMING-blue) · 🏛️ **[Enterprise Architecture Showcase](https://github.com/Vignesh-Manivasakam/PDI-master)** |
 
 ---
 
@@ -189,7 +189,7 @@
 
 #### 🤖 MCP Code Copilot — FastMCP v2 Developer Tool Server
 
-> *"Secure, sandboxed filesystem bridge for AI coding assistants — without recurring per-seat SaaS fees."*
+> *"Secure, sandboxed filesystem bridge for AI coding assistants — built to connect internal AI assistants to codebases when commercial Copilot was restricted."*
 
 - **17 sandboxed developer tools**: Multi-file batch reading, AST symbol extraction, function/class discovery, and ripgrep text search
 - **Robust security sandbox**: Strict directory traversal prevention (`..` blocking), symlink escaping checks (`Path.resolve`), and relative path validation
@@ -204,6 +204,8 @@
   <img src="https://img.shields.io/badge/IREB-CPRE--FL_Certified-1F5C99?style=flat-square"/>
   <img src="https://img.shields.io/badge/IBM-RAG_%26_Agentic_AI_Professional-052FAD?style=flat-square&logo=ibm&logoColor=white"/>
   <img src="https://img.shields.io/badge/Microsoft-Azure_AI_Fundamentals_(AZ--900)-0078D4?style=flat-square&logo=microsoftazure&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Bosch-1st_Prize_ADAS_Hackathon_(Dec_2023)-E5A93C?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Bosch-Engineering_Excellence_Award_(Jul_2024)-4CAF50?style=flat-square"/>
 </p>
 
 ---
@@ -244,7 +246,7 @@
 If you're building next-generation automotive R&D platforms — let's talk.
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/vignesh-manivasakam-17b0a2128/"><img src="https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="https://www.linkedin.com/in/vignesh-manivasakam"><img src="https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 </p>
 
 <p align="center"><sub>Built for safer, faster, and smarter automotive engineering.</sub></p>
