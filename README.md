@@ -70,7 +70,7 @@
 | **Key engineering** | • **ReqIF 1.2 compliance** — full OMG spec with multi-tool targeting (DOORS Classic 9.x, DOORS Next/ELM, Polarion, Elektrobit) · • **Two-tier automatic ReqID discovery** — structural fingerprinting + frequency scoring, with meta-pattern regex fallback · • **Three-tier heading inference** — model → regex numbering → bbox height heuristic · • **OLE COM pooling manager** — process recycling to eliminate GDI handle leaks · • **OCR result caching** — immutable/mutable JSON split avoids re-running GPU inference on revisits · • **Language filter** — auto-discards non-English blocks from mixed content |
 | **Impact** | **15 days → ~3 days (80% cut)** · **6,000+ pages processed** · **$30,163 USD cost avoidance** |
 | **Tech** | `Azure Document Intelligence` `PaddleOCR-VL` `FastAPI` `React/Vite/TypeScript` `ReqIF 1.2` `Word COM (OLE)` `Zustand` |
-| **Status** | ![Internal](https://img.shields.io/badge/DEPLOYED-INTERNAL-grey) · 🔒 *Private repo — public link coming soon* <!-- TODO: swap in public repo link once published --> |
+| **Status** | ![Deployed](https://img.shields.io/badge/DEPLOYED-INTERNAL-grey) · 🏛️ **[Enterprise Architecture Showcase]** |
 
 ---
 
@@ -113,7 +113,7 @@
 | **Solution** | Corrective RAG (CRAG) pipeline orchestrated by LangGraph with 5 agents — Router → Retriever → Grader → Rewriter → Generator. Self-correcting loops rewrite and re-retrieve (HyDE, step-back, decomposition) whenever retrieved context is irrelevant |
 | **Key engineering** | • **Multimodal ingestion** — PDF/DOCX/PPTX (Docling OCR + table extraction), audio (Groq Whisper-large-v3), video (ffmpeg keyframe extraction + VLM captioning), images (PyMuPDF + VLM) · • **Hybrid vector search** — Qdrant dense + BM25 sparse with RRF fusion, followed by an NVIDIA reranker · • **Content safety** — NVIDIA NemoGuard 8B pre-screens all queries · • **FastMCP server** — exposes indexing and search as standard Model Context Protocol tools via SSE · • **298 automated tests** across the pipeline |
 | **Tech** | `LangGraph` `Qdrant` `NVIDIA NIM (Llama 3.2 VLM)` `Supabase` `FastMCP` `Next.js` `Docling` |
-| **Status** | ![POC Built](https://img.shields.io/badge/POC%20BUILT-blue) · 🔗 [Repository](https://github.com/Vignesh-Manivasakam/Lumina) |
+| **Status** | ![Production Ready](https://img.shields.io/badge/LIVE%20DEMO-available-green) · 🔗 [Live Demo](https://lumina-frontend-ma7n.onrender.com) · 📦 [Public Repository](https://github.com/Vignesh-Manivasakam/Lumina) |
 
 ---
 
@@ -127,7 +127,7 @@
 | **Solution** | Hybrid agentic pipeline: entity extraction → Neo4j knowledge-graph multi-tool query (11 tools) → sufficiency check → scoped ChromaDB vector search (4 tools) → Claude Sonnet synthesis with extended thinking. 12 granular SSE event types stream reasoning steps live |
 | **Key engineering** | • **Cytoscape.js** renders Neo4j traversal paths as interactive graph visualizations · • **Plotly.js** projects vector search results as 2D PCA cluster scatter plots · • **Versioned prompt system** — 8 purpose-specific prompts · • **Drawing OCR** — Gemini API extracts structured data from engineering drawings with sufficiency scoring |
 | **Tech** | `Next.js 14` `FastAPI (SSE)` `Neo4j` `ChromaDB` `Claude Sonnet` `Gemini` `Cytoscape.js` |
-| **Status** | ![POC Built](https://img.shields.io/badge/POC%20BUILT-blue) · 🔒 *Private repo — public link coming soon* <!-- TODO: swap in public repo link once published --> |
+| **Status** | ![Interactive Workbench](https://img.shields.io/badge/WORKBENCH-STREAMING-blue) · 🏛️ **[Enterprise Architecture Showcase]** |
 
 ---
 
@@ -175,25 +175,26 @@
 
 ---
 
-#### 🎓 Competency Intelligence Platform — Blueprint & architecture
+#### 🎓 Competency Intelligence Platform (CIP) — Enterprise Multi-Agent Engine
 
-> *"9-agent AI platform for automated skill profiling, learning path design, and mastery evaluation."*
+> *"9-agent stateful LangGraph platform for automated skill profiling, dynamic DAG learning path routing, and real-time mastery tutoring."*
 
-- 620KB+ of detailed enterprise specifications across 21 documents — infrastructure, database schemas, agent definitions, API contracts, frontend wireframes, CI/CD pipelines
+- **Full production implementation**: FastAPI backend, React 18 / Vite dual portals (Employee & Manager), Neo4j 5.15, Redis 7, and PostgreSQL pgvector
 - **9 LangGraph agents**: Competency Architect, Learning State Manager, Assessment Scoring, Content Generator (RAG), Content Reviewer, Learning Path Designer (Dijkstra/A* on a Neo4j skill graph), Adaptive Tutor (WebSocket), Mastery Evaluation, Orchestrator
+- **Multi-model inference**: Dynamic routing across **NVIDIA NIM** (Meta Llama 3.1 70B & 8B Instruct), OpenAI, Anthropic, and Gemini
 - **4-tier memory**: PostgreSQL (metrics) + Neo4j (skill maps) + Redis (session state) + LangGraph checkpointers
-- 🔒 *Private repo — public link coming soon* <!-- TODO: swap in public repo link once published -->
+- 🔗 **[Full Public Repository](https://github.com/Vignesh-Manivasakam/Competency)**
 
 ---
 
-#### 🤖 FastMCP internal developer tool server
+#### 🤖 MCP Code Copilot — FastMCP v2 Developer Tool Server
 
-> *"Secure, sandboxed filesystem bridge for AI coding assistants — without another per-seat SaaS bill."*
+> *"Secure, sandboxed filesystem bridge for AI coding assistants — without recurring per-seat SaaS fees."*
 
-- 10 sandboxed filesystem tools (read, write, search, analyze, find references) with path traversal guards and symlink-escape protection
-- Built on FastMCP v2 + Starlette; auto-encoding detection via chardet; code metrics for 15+ languages
-- Enables secure agentic automation inside the corporate network perimeter without recurring SaaS per-seat license fees
-- 🔒 *Private repo — public link coming soon* <!-- TODO: swap in public repo link once published -->
+- **17 sandboxed developer tools**: Multi-file batch reading, AST symbol extraction, function/class discovery, and ripgrep text search
+- **Robust security sandbox**: Strict directory traversal prevention (`..` blocking), symlink escaping checks (`Path.resolve`), and relative path validation
+- Built on **FastMCP v2** + Starlette / Uvicorn; auto-encoding detection via chardet; code metrics across 15+ programming languages
+- 🔗 **[Full Public Repository](https://github.com/Vignesh-Manivasakam/MCP-Code-Copilot)**
 
 ---
 
